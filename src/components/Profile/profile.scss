@@ -1,0 +1,231 @@
+@import '../../responsive.scss' ;
+.profile{
+height: 100%;
+overflow-y: scroll;
+padding: 30px;
+
+    .info{
+        
+        padding: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: aliceblue;
+        margin: 35px 0;
+        .update{
+            @include md{
+                padding: 5px 5px;
+                 width: 70px;
+                 font-size: 14px;
+                
+             }
+            background-color: orange;
+            color: white;
+            border-radius: 15px;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+
+        }
+
+        .info-cont{
+            margin: 20px 0;
+    
+            .cont{
+                margin: 20px 0;
+                h3{
+                    margin: 20px 0;
+                }
+            }
+    
+    
+            .avatar{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                img{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+                
+            }
+    
+           
+        }
+        
+    }
+
+    .posts-save{
+       gap: 10px;
+       display: flex;
+       justify-content: space-between;
+       background-color: aliceblue;
+       padding: 20px;
+       border-radius: 15px;
+       
+     
+       
+       @include md{
+        .posts-save{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+        }
+        .item{
+            gap: 20px !important;
+           }
+       .pic{
+        width: 120px;
+       }
+       .price,.data,.address{
+        font-size: 12px !important;
+       }
+       }
+       
+      
+        display: flex;
+        .posts{
+            h3{
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 20px ;
+               
+            }
+            @include md{
+                width: 50% !important;
+            }
+            
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            width: 33%;
+            
+            height: 100vh;
+           
+            .item{
+                display: flex;
+                width: 100%;
+                margin: 30px 0;
+                .image{
+                    width: 50%;
+                    
+                }
+                .data{
+                    width: 50%;
+                    
+                    .address{
+                        margin: 20px 0;
+                        font-size: 14px;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        color: #888;
+                        img{
+                            
+                            width: 30px;
+                        }
+                    }
+    
+                    .price {
+                        margin: 20px 0;
+                        font-size: 20px;
+                        font-weight: 300;
+                        padding: 5px;
+                        border-radius: 5px;
+                        background-color: rgba(254, 205, 81, 0.438);
+                        width: max-content;
+                      }
+                      .feature{
+                        margin: 20px 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+    
+                        img{
+                            width: 30px;
+                          }
+    
+                      }
+    
+                      
+    
+                }
+            }
+        }
+        .savepost{
+            h3{
+                font-size: 28px;
+                font-weight: bold;
+                margin: 15px 0;
+            }
+            width: 50%;
+            @include md{
+                // display: none;
+            }
+           
+            .item{
+                display: flex;
+                width: 100%;
+                margin: 20px 0;
+               
+                .image{
+                   
+                    width: 50%;
+                }
+                .data{
+                    width: 50%;
+                    
+                    .address{
+                        margin: 20px 0;
+                        font-size: 14px;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        color: #888;
+                        img{
+                            
+                            width: 30px;
+                        }
+                        
+                    }
+    
+                    .price {
+                        margin: 20px 0;
+                        font-size: 20px;
+                        font-weight: 300;
+                        padding: 5px;
+                        border-radius: 5px;
+                        background-color: rgba(254, 205, 81, 0.438);
+                        width: max-content;
+                      }
+                      .feature{
+                        margin: 20px 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+    
+                        img{
+                            width: 30px;
+                          }
+    
+                      }
+    
+                      
+    
+                }
+            }
+
+        }
+        .picavt{
+            width: 100px;
+            
+        }
+    }
+   
+
+
+    
+
+}

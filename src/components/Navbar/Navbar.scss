@@ -1,0 +1,141 @@
+@import '../../responsive.scss';
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+   
+
+  
+    @include md{
+        .links{
+            display: none;
+        }
+    }
+    @include md{
+        a{
+            display: none;
+        }
+    }
+  
+
+
+    .left{
+        width: 60%;
+        
+        display:  flex;
+          align-items: center;
+           gap: 40px;
+    }
+    
+    .right{
+        width: 40%;
+        display: flex;
+        align-items: center;
+       
+        justify-content: flex-end;
+        gap: 30px;
+        .signup{
+            background-color: rgba(255, 166, 0, 0.776);
+            padding: 15px;
+            border-radius: 10px;
+          
+        }
+
+        .menuicon img{
+            width: 40px;
+            display: none;
+            z-index: 999;
+            cursor: pointer;
+
+            @include md {
+                display: block;
+            }
+        }
+
+        .sidebar{
+            position: absolute;
+            background-color: black;
+            width: 50%;
+            top: 0;
+             right: -50%;
+             height: 100vh;
+             z-index:1000 !important;
+             font-size: 20px;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+            justify-content: space-around;
+            transition: 0.5s;
+
+           
+           
+            &.active {
+                right: 0;
+              }
+          
+
+            h2{
+                font-size: 25px;
+                color: white;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                cursor: pointer;
+            }
+
+             a{
+                transition: 0.3s;
+                &:hover{
+                    scale:1.2
+                }
+                @include md{
+                    display: block;
+                    color: white;
+                   
+                }
+             }
+        }
+    }
+    
+     .logo{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        @include md {
+            h3{
+                display: none;
+            }
+        }
+        @include sm {
+            h3{
+                display: block;
+            }
+        }
+        h3{
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        img{
+            width: 30px;
+        }
+     }
+
+     .links ul {
+        display: flex ;
+       
+       
+       gap: 30px;
+
+       a{
+        font-size: 20px;
+       transition: 0.32s;
+       &:hover {
+        scale: 1.05;
+      }
+
+       }
+     }
+}

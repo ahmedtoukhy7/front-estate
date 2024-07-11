@@ -1,0 +1,69 @@
+.register{
+    display: flex;
+ 
+    height: 100vh;
+    
+
+    .form{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        h2{
+            font-size: 35px;
+            font-weight: bold;
+            color: orange;
+        }
+        input{
+            width: 80%;
+            padding-left: 10px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 30px;
+            background-color: #7777774e;
+        }
+        button{
+            width: 80%;
+            height: 40px;
+            cursor: pointer;
+           text-align: center;
+            margin:30px  auto;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 15px;
+          
+        }
+        .alert{
+            width: 80%;
+            margin: 15px auto;
+            border-radius: 15px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: antiquewhite;
+        }
+        
+    }
+    .image{
+        width: 40%;
+        position: relative;
+        img{
+            width: 100%;
+            position: absolute;
+            left: -15px;
+            top:10%;
+            
+           }
+    }
+    .submit{
+        display: flex;
+        justify-content: center;
+        align-items: center
+        ;
+    }
+}

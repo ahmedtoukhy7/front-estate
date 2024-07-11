@@ -1,0 +1,62 @@
+
+.updateprofile{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    background-color: aliceblue;
+    padding: 30px;
+
+    h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    input{
+        width: 350px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        margin: 20px 0;
+        padding-left: 10px;
+        color: #777;
+        display: block;
+      
+    }
+    .updateuser{
+        display: block;
+        margin: auto;
+        width: 150px;
+        padding: 10px 15px ;
+        border-radius: 10px;
+        border: none;
+        background-color: orange;
+        color: white;
+        cursor: pointer;
+    }
+
+    .avt{
+    width: 200px;
+        margin: 20px 0;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    .error{
+        background-color: rgba(255, 0, 0, 0.33);
+        padding: 20px ;
+        border-radius: 15px;
+        margin: 30px 0;
+        color: white;
+    }
+
+    .center{
+        text-align: center;
+        margin: 15px;
+    }
+    .updateuser{
+        margin: 20px auto;
+       
+    }
+
+}

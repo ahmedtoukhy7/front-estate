@@ -1,0 +1,38 @@
+.about{
+    width: 100%;
+    height: 75vh;
+    background-color: red;
+    background-image: url(../../../public//main.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 3;
+    // margin: 500px 0;
+    .lay{
+        position: absolute;
+        width: 100%;
+        height: 75vh;
+        background-color: rgba(0, 0, 0, 0.597);
+        left: 0;
+        top: 0;
+        z-index: -1;
+
+    }
+    .text{
+        display: flex;
+        z-index: 3;
+        height: 100%;
+       justify-content: center;
+        flex-direction: column;
+        color: white;
+        padding: 30px;
+        h1{
+            font-size: 50px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}

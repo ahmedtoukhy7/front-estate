@@ -1,0 +1,88 @@
+
+@import '../../responsive.scss' ;
+.home{
+    display: flex;
+    margin: 20px 0;
+    height: calc(100% - 100px);
+    align-items: center;
+
+
+    
+  
+    .text{
+
+        .wrapper{
+            padding-right: 40px;
+            height: 100%;
+
+        }
+        width: 60%;
+
+        @include md{
+            width: 100%;
+        }
+
+        h1{
+            font-size: 50px;
+            margin: 15px 0;
+            @include sm{
+                font-size: 30px;
+            }
+        }
+        p{
+            font-size: 20px;
+            color: #514d4d;
+            @include sm{
+                font-size: 18px;
+            }
+        }
+
+        
+        .box{
+
+            
+
+            @include md{
+                margin-top: 200px;
+            }
+            @include sm{
+                margin-top: 200px;
+                margin-bottom: 50px;
+            }
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+             h3{
+                font-size: 27px;
+                font-weight: bold;
+             }
+
+
+        }
+
+       
+      
+    }
+    .image{
+        @include md {
+            display: none;
+          }
+        
+    
+       position: relative;
+        .wrapper{
+            padding-left: 40px;
+        }
+    width: 40%;
+    height: 100%;
+    background-color: bisque;
+   img{
+    width: 100%;
+    position: absolute;
+    left: -15px;
+    top:10%;
+    
+   }
+    }
+
+}
